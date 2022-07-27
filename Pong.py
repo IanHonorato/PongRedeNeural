@@ -27,7 +27,7 @@ class Raquete:
         self.imagem_retangulo[0] = 0
 
     def move(self, y):
-        self.imagem_retangulo[1] += y * 10
+        self.imagem_retangulo[1] += y * 2
 
         global posicaoYraquete
         posicaoYraquete = self.imagem_retangulo.centery
@@ -90,9 +90,9 @@ class Bola:
 
 
     def move(self):
-        self.pos[0] += self.velo[0] * 4
+        self.pos[0] += self.velo[0] * 0.7
 
-        self.pos[1] += self.velo[1] * 4
+        self.pos[1] += self.velo[1] * 0.7
         self.imagem_retangulo.center = self.pos
 
     def colideRaquete(self, raqueteRect):
