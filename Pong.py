@@ -90,9 +90,9 @@ class Bola:
 
 
     def move(self):
-        self.pos[0] += self.velo[0] * 0.7
+        self.pos[0] += self.velo[0] * 0.8
 
-        self.pos[1] += self.velo[1] * 0.7
+        self.pos[1] += self.velo[1] * 0.8
         self.imagem_retangulo.center = self.pos
 
     def colideRaquete(self, raqueteRect):
